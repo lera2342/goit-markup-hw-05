@@ -639,18 +639,19 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
 
 .link-list-photo:hover .portfolio-cover-text {
         transform: translate(0);
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                0px 2px 1px rgba(46, 47, 66, 0.08);
         
 }
 
 .link-list-photo:focus .portfolio-cover-text {
 transform: translate(0);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
 
+}
+.link-list-photo:hover,
+.link-list-photo:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16),
+            0px 2px 1px rgba(46, 47, 66, 0.08);
+            
 }
 
 .portfolio-cover-wrap {
