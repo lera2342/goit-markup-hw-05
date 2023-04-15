@@ -239,16 +239,17 @@ body {
 .section-effective-btn:hover {
     background-color: var(--main-title-color);
 }
-
+.section-our-team {
+    padding-top: 120px;
+}
 .section-effective-btn:focus {
     background-color: var(--main-title-color);
 }
-current
+
 /* ---------------SECTION 2-------------- */
 .approach {
     color: var(--second-title-color);
         padding-top: 120px;
-            padding-bottom: 120px;
 }
 
 
@@ -256,8 +257,8 @@ current
     display: flex;
     gap: 24px;
     padding-left: 0;
-    padding-bottom: 120px;
-    padding-top: 120px;
+    /* padding-bottom: 120px;
+    padding-top: 120px; */
 }
 
 .main-item-wrap {
@@ -324,7 +325,6 @@ current
 /* ---------------SECTION 4-------------- */
 .section-team {
     background-color: var(--second-background-color);
-    padding-top: 120px;
     padding-bottom: 120px;
 }
 
