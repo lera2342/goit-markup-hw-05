@@ -121,7 +121,7 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -27px;
+    bottom: -28px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -144,8 +144,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--second-title-color);
-    transition: color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -178,7 +177,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-color);
-    transition: color 250ms linear;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------------SECTION 1-------------- */
@@ -227,8 +226,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0px;
     background-position: center;
-    transition: background-color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -347,12 +345,10 @@ body {
     height: 100%;
     border-radius: 50%;
     background-color: var(--third-title-color);
-    /* display: inline-block; */
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -430,8 +426,7 @@ body {
     border-radius: 4px;
     border: 1px solid #8E8F99;
     fill: #8E8F99;
-    transition: border 250ms, fill 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .costumers-link:hover {
@@ -457,8 +452,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link:hover {
@@ -570,9 +564,10 @@ body {
     border-radius: 4px;
     padding: 12px 24px;
     justify-content: center;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition: border-color, color, background-color 250ms linear, box-shadow;
-    transition-duration: border-color 250ms, color;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover {
@@ -623,38 +618,15 @@ body {
     position: relative;
 }
 
-/* .item:hover {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-            0px 1px 1px rgba(46, 47, 66, 0.16),
-            0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.item:focus {
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
-
 .link-list-photo {
     display: block;
-    transition: transform, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-list-photo:hover .portfolio-cover-text {
-        transform: translate(0);
-        
-}
-
-.link-list-photo:focus .portfolio-cover-text {
-transform: translate(0);
-
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-list-photo:hover,
 .link-list-photo:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
             0px 1px 1px rgba(46, 47, 66, 0.16),
             0px 2px 1px rgba(46, 47, 66, 0.08);
-            
 }
 
 .portfolio-cover-wrap {
@@ -675,6 +647,9 @@ transform: translate(0);
     height: 100%;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-list-photo:hover .portfolio-cover-text {
+    transform: translate(0);
 }
 
 .list-title-portfolio {
@@ -708,8 +683,7 @@ transform: translate(0);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms linear;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px;
 }
 .modal-close-btn {
@@ -726,9 +700,11 @@ transform: translate(0);
 }
 .modal-close-btn:hover {
     background-color: #404BBF;
+    fill: #ffffff;
 }
 .modal-close-btn:focus {
     background-color: #404BBF;
+    fill: #ffffff;
 }
 .modal-btn {
     width: 8px;
@@ -738,12 +714,12 @@ transform: translate(0);
     justify-content: center;
     transition: fill 250ms;
 }
-.modal-btn:hover {
+/* .modal-btn:hover {
     fill: #ffffff;
 }
 .modal-btn:focus {
     fill: #ffffff;
-}
+} */
 .is-hidden {
     opacity: 0;
     visibility: hidden;
